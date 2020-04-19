@@ -1,11 +1,13 @@
 package it.polito.tdp.anagrammi.model;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Ricerca {
 
-	List<String> soluzione = new ArrayList<>();
+	Set<String> soluzione = new HashSet<>();
 	
 	
 	/**
@@ -13,7 +15,7 @@ public class Ricerca {
 	 * @param anagramma parola da anagrammare
 	 * @return lista di tutti gli anagrammi trovati!
 	 */
-	public List<String> anagrammi(String anagramma){
+	public Set<String> anagrammi(String anagramma){
 		
 		List<Character> disponibili = new ArrayList<>();
 		

@@ -1,7 +1,9 @@
 package it.polito.tdp.anagrammi.model;
 
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 import it.polito.tdp.anagrammiDAO.AnagrammaDAO;
 
@@ -9,7 +11,7 @@ public class Model {
 
 	
 	AnagrammaDAO ana = new AnagrammaDAO();
-	List<String> anagrammi = new LinkedList<>();
+	Set<String> anagrammi = new HashSet<>();
 	List<String> corretti = new LinkedList<>();
 	List <String> errati = new LinkedList<>();	
 	
